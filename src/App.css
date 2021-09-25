@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=IndieFlower&display=swap");
+@import "./styles/forecast.css";
+
+.isDarkMode {
+  background-color: black;
+}

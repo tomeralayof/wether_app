@@ -1,0 +1,11 @@
+body {
+  font-family: "Indie Flower", cursive;
+}
+
+.dark {
+  background-color: black !important;
+}
+
+.light {
+  background-color: white !important;
+}
