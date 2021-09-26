@@ -25,7 +25,7 @@ async function success(pos) {
   let crd = pos.coords;
   let latitude = crd.latitude;
   let longitude = crd.longitude;
-   let {data} = await axios.get(`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=hFErH3ODYR7lAvbJl8CJiZYIfHdxcPCN&q=${latitude}%2C${longitude}`);
+   let {data} = await axios.get(`https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=hFErH3ODYR7lAvbJl8CJiZYIfHdxcPCN&q=${latitude}%2C${longitude}`);
     let obj = { temp: data.GeoPosition.Elevation.Metric.Value , country: data.Country.EnglishName ,city: data.LocalizedName}
   setLocation(obj);
 }
